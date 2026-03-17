@@ -16,6 +16,7 @@ import Category from "./pages/Category";
 import Work from "./pages/Work";
 import Complaint from "./pages/Complaint";
 import Report from "./pages/Report";
+import UserPage from "./pages/UserPage";
 
 import "./App.css";
 
@@ -51,6 +52,8 @@ function App() {
             <Route path="/report" element={<Report />} />
           </Route>
         </Route>
+
+        <Route path="/user" element={<UserPage />} />
 
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>

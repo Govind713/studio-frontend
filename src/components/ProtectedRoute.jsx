@@ -7,6 +7,11 @@ function ProtectedRoute() {
   if (!user) {
     return <Navigate to="/login" replace />;
   }
+  // if (user.role !== "user") {
+  //   return <Navigate to="/user" replace />;
+  // } else if (user.role == "admin") {
+  //   return <Navigate to="/dashboard" replace />;
+  // }
 
   return <Outlet />;
 }

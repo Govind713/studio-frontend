@@ -47,7 +47,7 @@ function AdminLogin() {
   return (
     <div className="auth-page">
       <div className="auth-card">
-        <h2>Admin login</h2>
+        <h2 className="text-center"><b>Login</b></h2>
 
         <form onSubmit={handleSubmit} className="auth-form">
           <div className="mb-2">
